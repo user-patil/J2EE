@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE beans PUBLIC "-//SPRING//DTD BEAN 2.0//EN"
+        "http://www.springframework.org/dtd/spring-beans-2.0.dtd">
+
+
+<beans>
+
+	<!-- <bean class="com.pojo.Students" id="std"> -->
+	<!-- <property name="stud_id" value="121"></property> -->
+	<!-- <property name="stud_Name" value="shubham"></property> -->
+	<!-- <property name="city" value="pune"></property> -->
+
+	<!-- </bean> -->
+
+	<!-- <bean class="com.pojo.College" id="clg"> -->
+
+	<!-- <property name="collage_id" value="1001"></property> -->
+	<!-- <property name="collage_name" value="DYP"></property> -->
+	<!-- <property name="city" value="pune"></property> -->
+	<!-- <property name="stud" ref="std"></property> -->
+
+	<!-- </bean> -->
+
+	<bean class="com.pojo.Students" id="std">
+
+		<constructor-arg index="0" value="121"></constructor-arg>
+		<constructor-arg index="1" value="shubham"></constructor-arg>
+		<constructor-arg index="2" value="pune"></constructor-arg>
+	</bean>
+
+	<bean class="com.pojo.College" id="clg">
+
+		<constructor-arg index="0" value="10001"></constructor-arg>
+		<constructor-arg index="1" value="Bill gates College"></constructor-arg>
+		<constructor-arg index="2" value="Dharashiv"></constructor-arg>
+		<constructor-arg index="3" ref="std"></constructor-arg>
+	</bean>
+
+
+
+
+
+
+
+
+</beans>
